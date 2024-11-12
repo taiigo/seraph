@@ -129,11 +129,15 @@ document.addEventListener('DOMContentLoaded', function() {
             };
 
             newTab.document.body.appendChild(iframe);
+            
+            // Replace the current window location with google.com after clicking the link
+            window.location.replace('https://www.google.com');
         } else {
             alert("couldn't manage to open a new tab :(");
         }
     });
-}); 
+});
+
 
 // favouritng games
 document.addEventListener("DOMContentLoaded", function () {
