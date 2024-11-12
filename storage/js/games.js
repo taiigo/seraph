@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let openBlankCookie = cookie('open-blank');
-    if (openBlankCookie === null) {
+    if (openBlankCookie === null || openBlankCookie === 'true' ) {
         openBlankCookie = 'false';
         cookie('open-blank', openBlankCookie, 365);
     }
